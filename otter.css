@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     background-color: black;
     display: flex;
     flex-direction: column;
-    padding: 50px 0;
     justify-content: flex-start;
     align-items: center;
 }
@@ -15,14 +15,11 @@ main {
     width: 100%;
     color: black;
     font-size: 10px;
+    margin: 50px 0;
 }
 .main-container {
     background-color: rgb(29, 25, 25);
     padding: 30px 50px 30px 30px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
 }
 .sub-container {
     position: relative;
@@ -58,11 +55,9 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
-    body {
-        padding-top: 20vh;
-    }
     main {
         font-size: 20px;
+        margin: 278px 0;
     }
     .main-container {
         padding: 50px 50px 70px 23px;
@@ -86,6 +81,16 @@ h1 {
     
 }
 
+/* when min-width: 768px is landscape */
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    body {
+        height: 100vh;
+    }
+    main {
+        margin: 0;
+    }
+}
+
 @media only screen and (min-width: 912px) {
     body {
         padding: 0 0;
@@ -95,11 +100,13 @@ h1 {
 
     main {
         width: 95%;
+        margin: 480px 0;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     main {
         width: 80%;
+        margin: 449px;
     }
 }
