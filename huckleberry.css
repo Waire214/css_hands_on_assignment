@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+/* Lato font styling */
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  /* lato font styling end */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #666666;
+    color: #000000;
+}
+.containers {
+    background-color: #ffffff;
+    padding: 25px 25px 50px 25px;
+    text-align: left;
+    border-bottom: 8px solid #999999;
+    margin-bottom: 72px;
+}
+header > div > h1 {
+    font-size: 32px;
+    line-height: 120%;
+    margin-top: 71px;
+    padding-bottom: 25px;
+}
+
+header > div > p {
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.5%;
+    padding-top: 25px;
+}
+span {
+    color: #15a315;
+}
+
+.main-container {
+    padding: 10px 25px 25px 25px;
+}
+main > h2 {
+    font-size: 24px;
+    line-height: 120%;
+    background: #FFBF00;
+    border-bottom: 8px solid #CC9900;
+    margin-left: -25px;
+    padding: 8px 25px;
+}
+
+article > p {
+    font-size: 20px;
+    line-height: 150%;
+    padding-top: 25px;
+}
+
+.psuedo-body {
+    background-color: #ffffff;
+    padding: 100px 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    main > h2 {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .containers {
+        margin: 0 auto;
+        margin-bottom: 72px;
+    }
+    .psuedo-header {
+        width: 800px;
+        height: 250px;
+        margin: 0 auto;
+        padding: 0 25px;
+    }
+    header > div > p {
+        width: 415px;
+    }
+    .main-container {
+        width: 800px;
+        height: 350px;
+    }
+    main > h2 {
+        z-index: 3;
+        position: relative;
+        margin-left: -35px;
+        padding-left: 35px;
+    }
+
+    .psuedo-body {
+        margin-top: 72px;
+        padding: 28px 25px;
+    }
+
+}
