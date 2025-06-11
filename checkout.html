@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <title>WP Pusher Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="font-inter bg-gray-100 min-h-screen flex flex-col">
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 14c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+                </svg>
+                <span>WP Pusher</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Download</a>
+                <a href="#">Learn more</a>
+                <a href="#">Pricing</a>
+                <a href="#">Help</a>
+                <a href="#" class="account-btn">Account</a>
+            </nav>
+    
+            <div class="mobile-menu-btn">
+                <button>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="card-wrapper">
+            <form class="form-column">
+                <h1>Checkout</h1>
+                <div class="form-section">
+
+                    <div class="form-section-header">
+                        <div class="number-circle">1</div>
+                        <h2>Your Basic Information</h2>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Jane">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Doe">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="janedoe@example.com">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="form-section-header">
+                        <div class="number-circle">2</div>
+                        <h2>Your Payment Information</h2>
+                    </div>
+
+                    <div class="form-group card-number-group">
+                        <label for="creditCard">Credit Card</label>
+                        <input type="text" id="creditCard" value="Card Number" disabled>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" placeholder="MM/YY">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="CVC">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="buy-button">
+                    Buy WP Pusher
+                </button>
+
+                <div class="help-section">
+                    <p>
+                        Need any help? Don't hesitate to <a href="#">contact support</a>!
+                    </p>
+                    <div class="stripe-logo-wrapper">
+                        <img src="https://placehold.co/100x30/ffffff/000000?text=stripe" alt="Powered by Stripe">
+                    </div>
+                </div>
+            </form>
+
+            <div class="pricing-column">
+                <div>
+                    <h2>Freelancer</h2>
+                    <p class="price">
+                        <span class="currency">$</span>99<span class="year">/year</span>
+                    </p>
+                    <p class="renew-info">Automatically renews after 1 year</p>
+
+                    <ul class="feature-list">
+                        <li>
+                            <svg class="w-5 h-5 text-green-300 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Use on 5 client sites
+                        </li>
+                        <li>
+                            <svg class="w-5 h-5 text-green-300 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Private repositories
+                        </li>
+                        <li>
+                            <svg class="w-5 h-5 text-green-300 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Email support
+                        </li>
+                    </ul>
+
+                    <p class="agency-plan-link">
+                        Need 20 client sites?
+                        <a href="#">Switch to the Agency plan.</a>
+                    </p>
+                </div>
+
+
+                <div class="testimonial-section">
+                    <p>
+                        "FTP is horrible to deal with. WP Pusher solves that issue,
+                        and the customer support is awesome!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/40x40/ffffff/000000?text=KB" alt="Kirk Beard Avatar">
+                        <span>Kirk Beard</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2018 WP Pusher IVS <span class="separator">&bull;</span> <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
