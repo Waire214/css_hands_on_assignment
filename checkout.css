@@ -60,7 +60,7 @@ body {
     display: none;
     align-items: center;
     gap: 1.5rem;
-    color: #4b5563; 
+    color: #1D2C3C; 
 }
 
 .header .nav-links a {
@@ -188,12 +188,13 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.form-section-header .number-circle {
+.form-section-header .number-circle, .inquiry-circle  {
     width: 2rem;
     height: 2rem;
     border-radius: 9999px;
-    background-color: #2563eb;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #548BC5;
+    border: 2px solid #548BC5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,7 +268,7 @@ body {
 
 .buy-button {
     width: 100%;
-    background-color: #16a34a;
+    background-color:#038E7D;
     color: #ffffff;
     font-weight: 600;
     padding-top: 0.75rem;
@@ -293,11 +294,20 @@ body {
 .help-section p {
     font-size: 0.875rem;
     line-height: 1.25rem;
-    color: #6b7280;
 }
 
+.inquiry-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.inquiry {
+    text-align: left;
+    font-size: 11px;
+}
 .help-section a {
-    color: #2563eb;
+    color: #6b6868;
     text-decoration: none;
     transition-property: text-decoration-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -320,7 +330,7 @@ body {
 
 .pricing-column {
     width: 100%;
-    background-color: #2563eb;
+    background-color: #1179BF;
     color: #ffffff;
     padding: 1.5rem;
     display: flex;
