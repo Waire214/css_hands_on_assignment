@@ -5,67 +5,50 @@
     --text-color: #333333;
     --dark-text: #141414;
     --light-text: #141414;
-    --gradient-start: #1e3a8a; /* Darker blue for gradients */
-    --gradient-end: #004c8f;   /* Lighter blue for gradients */
-    --footer-bg: #1A1A1A;      /* Adjusted based on screenshot for footer background */
-    --footer-text-light: #B4B4B4; /* Light grey for footer text */
+    --gradient-start: #1e3a8a;
+    --gradient-end: #004c8f;
+    --footer-bg: #1A1A1A;
+    --footer-text-light: #B4B4B4;
 }
-
-/* Reset default browser margins and paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Base body styles */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: #FFFFFF;
 }
-
-/* Link styling */
 a {
     text-decoration: none;
     color: var(--primary-blue);
 }
-
-/* Remove default list styles */
 ul {
     list-style: none;
 }
-
-/* Heading colors and spacing */
 h1, h2, h3 {
     color: var(--dark-text);
     margin-bottom: 1rem;
 }
-
-/* Paragraph colors and spacing */
 p {
     margin-bottom: 1rem;
     color: var(--light-text);
 }
-
-/* Primary Button Styling */
 .btn-primary {
     background-color: var(--primary-blue);
     color: #fff;
     padding: 0.8rem 2.5rem;
-    border-radius: 50px; /* Highly rounded corners */
+    border-radius: 50px;
     border: none;
     cursor: pointer;
     font-weight: 600;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease;
 }
-
 .btn-primary:hover {
-    background-color: #0056e6; /* Slightly darker on hover */
+    background-color: #0056e6;
 }
-
-/* Secondary Button Styling */
 .btn-secondary {
     background-color: transparent;
     color: var(--primary-blue);
@@ -74,52 +57,41 @@ p {
     border: 1px solid var(--primary-blue);
     cursor: pointer;
     font-weight: 600;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-
 .btn-secondary:hover {
     background-color: var(--primary-blue);
     color: #fff;
 }
-
 .btn-no-border {
     color: var(--primary-blue);
     padding: 0.8rem 1.5rem;
     cursor: pointer;
     font-weight: 600;
 }
-
-/* Text highlighting (underline with specific color) */
 .highlight {
     color: var(--primary-blue);
     text-decoration: underline;
     text-decoration-color: var(--primary-blue);
-    text-underline-offset: 5px; /* Adjust distance of underline */
+    text-underline-offset: 5px;
     text-decoration-thickness: 3px;
 }
-
-/* Blue text highlight without underline */
 .highlight-blue {
     color: var(--primary-blue);
 }
-
-/* Header Section Styling */
 .header {
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     padding: 1rem 0;
 }
-
 .navbar {
     display: flex;
-    justify-content: space-between; /* Distribute items along the main axis */
-    align-items: center; /* Vertically align items */
-    max-width: 1200px; /* Max width for content */
-    margin: 0 auto; /* Center the navbar */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 2rem;
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -127,101 +99,80 @@ p {
     font-size: 1.5rem;
     color: var(--dark-text);
 }
-
 .logo img {
-    margin-right: 0.5rem; /* Space between logo image and text */
+    margin-right: 0.5rem;
 }
-
 .nav-links {
     display: flex;
-    gap: 2rem; /* Space between navigation items */
+    gap: 2rem;
 }
-
 .nav-links li a {
     color: var(--light-text);
     font-weight: 500;
     transition: color 0.3s ease;
 }
-
-
 .nav-links li a:hover {
-    color: var(--primary-blue); /* Hover effect for links */
+    color: var(--primary-blue);
 }
-
-/* Dropdown Menu Styling (CSS-only hover) */
 .dropdown {
     position: relative;
 }
-
 .dropdown-content {
-    display: none; /* Hidden by default */
+    display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1; /* Ensure dropdown is above other content */
+    z-index: 1;
     border-radius: 8px;
     padding: 0.5rem 0;
-    left: 50%; /* Center dropdown horizontally relative to parent */
+    left: 50%;
     transform: translateX(-50%);
-    top: 100%; /* Position below the parent link */
+    top: 100%;
 }
-
 .dropdown-content a {
     color: var(--dark-text);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-    white-space: nowrap; /* Prevent wrapping for dropdown items */
+    white-space: nowrap;
 }
-
 .dropdown-content a:hover {
     background-color: #f1f1f1;
     color: var(--primary-blue);
 }
-
-/* Show dropdown content on hover for desktop */
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-/* Authentication Buttons */
 .auth-buttons {
     display: flex;
     gap: 1rem;
     align-items: center;
 }
-
 .btn-login {
     color: var(--primary-blue);
     font-weight: 600;
     padding: 0.5rem 1rem;
 }
-
-/* Hamburger Menu Icon (for mobile - purely visual without JS) */
 .hamburger {
-    display: none; /* Hidden on desktop by default */
+    display: none;
     font-size: 1.8rem;
     cursor: pointer;
     color: var(--dark-text);
 }
-
-/* Hero Section Styling */
 .hero-section {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 4rem 2rem;
-    min-height: 80vh; /* Occupy most of the viewport height */
+    min-height: 80vh;
     background-color: #fff;
     position: relative;
-    overflow: hidden; /* Hide overflowing blur effects */
+    overflow: hidden;
 }
-
-/* Background blur circles for visual effect */
 .hero-section::before,
 .hero-section::after {
     content: '';
@@ -229,33 +180,28 @@ p {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background-color: rgba(0, 101, 254, 0.05); /* Semi-transparent primary blue */
-    filter: blur(100px); /* Strong blur effect */
-    z-index: 0; /* Behind main content */
+    background-color: rgba(0, 101, 254, 0.05);
+    filter: blur(100px);
+    z-index: 0;
 }
-
 .hero-section::before {
     top: -100px;
     left: -100px;
 }
-
 .hero-section::after {
     bottom: -100px;
     right: -100px;
 }
-
 .hero-content {
     width: 90%;
-    z-index: 1; /* Ensure content is above blur effects */
+    z-index: 1;
 }
-
 .hero-content h1 {
     font-size: 48px;
     line-height: 96px;
     margin-bottom: 1rem;
     color: var(--dark-text);
 }
-
 .hero-content p {
     font-size: 18px;
     margin: 0 auto;
@@ -264,92 +210,75 @@ p {
     text-align: center;
     width: 80%;
 }
-
 .hero-buttons {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 3rem;
 }
-
-
-/* Statistics Section */
 .statistics-section {
     color: #fff;
     width: 100%;
     background-color: #F9FBFD;
     text-align: center;
 }
-
 .stats-header h2 {
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 3rem;
 }
-
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
 }
-
 .stat-item h3 {
     font-size: 2.5rem;
-    color: var(--primary-blue); /* Distinct blue color for numbers */
+    color: var(--primary-blue);
     margin-bottom: 0.5rem;
 }
-
 .stat-item p {
     font-size: 1.1rem;
     color: #f0f0f0;
 }
-
-/* Features Section */
 .features-section {
     padding: 6rem 2rem;
     background-color: #fff;
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .features-header {
     display: flex;
     align-items: center;
     margin-bottom: 3rem;
 }
-
 .vertical-line {
     width: 6px;
     height: 40px;
     margin-right: 1rem;
 }
-
 .features-header h2 {
     font-size: 2.5rem;
     color: var(--dark-text);
 }
-
 .features-grid {
     display: grid;
-    grid-template-columns: 1.5fr repeat(2, 1fr); /* Specific column ratios */
+    grid-template-columns: 1.5fr repeat(2, 1fr);
     gap: 2rem;
 }
-
 .feature-intro {
     background-color: #f7f7f7;
     padding: 2rem;
     border-radius: 15px;
     display: flex;
-    align-items: center; /* Center the text vertically */
+    align-items: center;
 }
-
 .feature-intro p {
     font-size: 1rem;
     line-height: 1.8;
 }
-
 .feature-item {
     background-color: #fff;
     border: 1px solid #eee;
@@ -358,43 +287,36 @@ p {
     text-align: left;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
-
 .icon-circle {
-    background-color: rgba(0, 101, 254, 0.1); /* Light blue background for icon */
+    background-color: rgba(0, 101, 254, 0.1);
     color: var(--primary-blue);
     width: 60px;
     height: 60px;
-    border-radius: 50%; /* Perfect circle */
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
-
 .feature-item h3 {
     font-size: 1.5rem;
     color: var(--dark-text);
     margin-bottom: 0.8rem;
 }
-
 .feature-item p {
     font-size: 0.95rem;
     color: var(--light-text);
 }
-
-/* Pricing Section */
 .pricing-section {
     padding: 6rem 2rem;
-    background-color: #f8fbfd; /* Very light blue background */
+    background-color: #f8fbfd;
     text-align: center;
 }
-
 .pricing-header {
     max-width: 800px;
     margin: 0 auto 3rem auto;
 }
-
 .pricing-header h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -402,76 +324,63 @@ p {
     align-items: center;
     justify-content: center;
 }
-
 .pricing-header p {
     font-size: 1.1rem;
     color: var(--light-text);
 }
-
 .pricing-cards {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow cards to wrap */
+    flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 3rem;
 }
-
 .price-card {
     background-color: #fff;
     border: 1px solid #eee;
     border-radius: 15px;
     padding: 2.5rem;
-    width: 320px; /* Fixed width for cards */
+    width: 320px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Push content to top/bottom */
+    justify-content: space-between;
 }
-
-/* Professional Card (highlighted) */
 .price-card.professional {
     background-color: var(--dark-blue);
     color: #fff;
-    transform: scale(1.05); /* Slightly larger */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* More prominent shadow */
-    z-index: 1; /* Ensure it overlaps others slightly */
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 1;
 }
-
 .price-card.professional h3,
 .price-card.professional h2,
 .price-card.professional p {
-    color: #fff; /* White text for professional card */
+    color: #fff;
 }
-
 .price-card.professional ul li {
-    color: #e0e0e0; /* Lighter white for list items */
+    color: #e0e0e0;
 }
-
-
 .price-card h3 {
     font-size: 1.3rem;
     color: var(--dark-text);
     margin-bottom: 0.5rem;
 }
-
 .price-card h2 {
     font-size: 2.5rem;
     color: var(--primary-blue);
     margin-bottom: 1rem;
 }
-
 .price-card p {
     font-size: 1rem;
     color: var(--light-text);
     margin-bottom: 2rem;
 }
-
 .price-card ul {
     list-style: none;
     padding: 0;
 }
-
 .price-card ul li {
     display: flex;
     align-items: center;
@@ -479,28 +388,21 @@ p {
     font-size: 0.95rem;
     color: var(--light-text);
 }
-
 .price-card ul li i {
     color: var(--primary-blue);
     margin-right: 0.8rem;
     font-size: 1.1rem;
 }
-
 .price-card.professional ul li i {
-    color: #fff; /* Ensure checkmark is white for professional card */
+    color: #fff;
 }
-
-
 .pricing-buttons {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
-
-
-/* URL Shortener Section */
 .url-shortener-section {
-    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); /* Blue gradient background */
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     padding: 6rem 2rem;
     display: flex;
     justify-content: center;
@@ -509,8 +411,6 @@ p {
     position: relative;
     overflow: hidden;
 }
-
-/* Background blur circles for visual effect */
 .url-shortener-section::before,
 .url-shortener-section::after {
     content: '';
@@ -518,33 +418,28 @@ p {
     width: 600px;
     height: 600px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.05);
     filter: blur(80px);
     z-index: 0;
 }
-
 .url-shortener-section::before {
     top: -200px;
     left: -200px;
 }
-
 .url-shortener-section::after {
     bottom: -200px;
     right: -200px;
 }
-
-
 .url-shortener-form {
     background-color: #fff;
     padding: 3rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow for pop-out effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 600px; /* Constrain form width */
+    max-width: 600px;
     text-align: center;
     z-index: 1;
 }
-
 .url-input,
 .domain-select,
 .alias-input {
@@ -555,69 +450,56 @@ p {
     border-radius: 10px;
     font-size: 1rem;
     color: var(--dark-text);
-    box-sizing: border-box; /* Include padding/border in element's total width/height */
+    box-sizing: border-box;
 }
-
 .form-row {
     display: flex;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
 }
-
 .form-row > * {
-    flex: 1; /* Distribute space equally among children */
+    flex: 1;
 }
-
 .trim-url-btn {
     width: 100%;
     font-size: 1.1rem;
     padding: 1.2rem;
     margin-bottom: 1.5rem;
 }
-
 .trim-url-btn i {
     margin-right: 0.8rem;
 }
-
 .terms {
     font-size: 0.85rem;
     color: var(--light-text);
 }
-
 .terms a {
     color: var(--primary-blue);
     text-decoration: underline;
 }
-
-/* FAQ Section (CSS-only for static open/close) */
 .faq-section {
     padding: 6rem 2rem;
     max-width: 1000px;
     margin: 0 auto;
 }
-
 .faq-header {
     display: flex;
     align-items: center;
     margin-bottom: 3rem;
     justify-content: center;
 }
-
 .faq-header h2 {
     font-size: 2.5rem;
     color: var(--dark-text);
 }
-
 .faq-items {
     max-width: 700px;
     margin: 0 auto;
 }
-
 .faq-item {
-    border-bottom: 1px solid #eee; /* Separator line */
+    border-bottom: 1px solid #eee;
     padding: 1.5rem 0;
 }
-
 .faq-item h3 {
     display: flex;
     justify-content: space-between;
@@ -625,44 +507,31 @@ p {
     font-size: 1.15rem;
     color: var(--dark-text);
     margin-bottom: 0;
-    /* Cursor pointer remains for visual indication, though not interactive without JS */
 }
-
 .faq-item h3 i {
     color: var(--primary-blue);
     font-size: 1.2rem;
 }
-
 .faq-item p {
     font-size: 0.95rem;
     color: var(--light-text);
     margin-top: 1rem;
-    /* All hidden by default, only first one is shown via direct styling */
     display: none;
 }
-
-/* Always show the first FAQ item's paragraph as per screenshot */
 .faq-item:first-child p {
     display: block;
 }
-
-/* Hide the plus icon for the first (open) FAQ item */
 .faq-item:first-child h3 i {
     display: none;
 }
-
-
-/* Call to Action Banner */
 .cta-banner {
-    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); /* Blue gradient background */
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     padding: 5rem 2rem;
     text-align: center;
     color: #fff;
     position: relative;
     overflow: hidden;
 }
-
-/* Background blur circles for visual effect */
 .cta-banner::before,
 .cta-banner::after {
     content: '';
@@ -674,17 +543,14 @@ p {
     filter: blur(80px);
     z-index: 0;
 }
-
 .cta-banner::before {
     top: -100px;
     left: -100px;
 }
-
 .cta-banner::after {
     bottom: -100px;
     right: -100px;
 }
-
 .cta-banner h2 {
     font-size: 2.8rem;
     color: #fff;
@@ -692,15 +558,12 @@ p {
     z-index: 1;
     position: relative;
 }
-
 .cta-banner .btn-primary {
     padding: 1rem 2.5rem;
     font-size: 1.1rem;
     z-index: 1;
     position: relative;
 }
-
-/* Footer Section */
 .footer {
     background-color: var(--footer-bg);
     color: var(--footer-text-light);
@@ -708,8 +571,6 @@ p {
     position: relative;
     overflow: hidden;
 }
-
-/* Background gradient for footer */
 .footer::before {
     content: '';
     position: absolute;
@@ -720,72 +581,60 @@ p {
     background: linear-gradient(to bottom right, rgba(0, 101, 254, 0.05), transparent 40%);
     z-index: 0;
 }
-
 .footer-content {
     display: flex;
-    flex-wrap: wrap; /* Allow content columns to wrap */
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     z-index: 1;
     position: relative;
 }
-
 .footer-logo-social {
-    width: 100%; /* Take full width on small screens initially */
+    width: 100%;
     margin-bottom: 2rem;
     text-align: center;
 }
-
 .footer-logo-social .logo {
     color: #fff;
     justify-content: center;
     margin-bottom: 1.5rem;
 }
-
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
 }
-
 .social-icons a {
     color: var(--footer-text-light);
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
-
 .social-icons a:hover {
     color: var(--primary-blue);
 }
-
 .footer-links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid for columns */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
     width: 100%;
 }
-
 .footer-column h3 {
     color: #fff;
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
 }
-
 .footer-column ul li {
     margin-bottom: 0.8rem;
 }
-
 .footer-column ul li a {
         color: var(--footer-text-light);
     font-size: 0.9rem;
     transition: color 0.3s ease;
 }
-
 .footer-column ul li a:hover {
     color: var(--primary-blue);
 }
-
 .footer-bottom {
     text-align: right;
     margin-top: 3rem;
@@ -794,98 +643,75 @@ p {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle top border */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 1rem;
 }
-
-/* Responsive Design Media Queries */
 @media (max-width: 1024px) {
     .nav-links {
         gap: 1.5rem;
     }
-
     .hero-content h1 {
         font-size: 3rem;
     }
-
     .stats-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+        grid-template-columns: repeat(2, 1fr);
     }
-
     .features-grid {
-        grid-template-columns: 1fr; /* Stack features vertically */
+        grid-template-columns: 1fr;
     }
-
     .feature-intro {
         text-align: left;
     }
-
     .pricing-cards {
-        flex-direction: column; /* Stack pricing cards vertically */
+        flex-direction: column;
         align-items: center;
     }
 }
-
 @media (max-width: 768px) {
     .navbar {
         padding: 0 1.5rem;
     }
-
-    /* Mobile Navigation (hamburger menu is purely visual) */
     .nav-links {
-        /* Display as block on mobile, but it won't toggle without JS */
-        display: none; /* Hide by default, cannot be toggled without JS */
+        display: none;
         position: fixed;
         right: 0;
         top: 0;
-        height: 100vh; /* Full viewport height */
+        height: 100vh;
         background-color: var(--dark-blue);
         flex-direction: column;
         width: 60%;
         align-items: center;
-        transform: translateX(100%); /* Hidden by default */
+        transform: translateX(100%);
         transition: transform 0.3s ease-in;
         padding-top: 5rem;
         z-index: 99;
     }
-
     .nav-links li a {
-        color: #fff; /* White links in mobile menu */
+        color: #fff;
     }
-
-    /* Without JS, .nav-active won't be toggled */
-    /* .nav-active {
-        transform: translateX(0%);
-    } */
-
     .hamburger {
-        display: block; /* Show hamburger icon */
+        display: block;
         z-index: 100;
     }
-
     .auth-buttons {
-        display: none; /* Hide auth buttons on mobile to simplify nav */
+        display: none;
     }
-
     .hero-content h1 {
         font-size: 2.5rem;
     }
-
     .hero-image {
         bottom: -50px;
         padding: 1rem;
         height: auto;
         min-height: 150px;
     }
-
     .image-box {
-        flex-direction: column; /* Stack URL shorten diagram items */
+        flex-direction: column;
         gap: 0.8rem;
         width: 100%;
     }
-
     .long-url, .short-url {
-        width: 80%; /* Adjust width for stacked items */
+        width: 80%;
         padding: 0.8rem 1rem;
     }
     .hero-image .arrow {
@@ -896,61 +722,48 @@ p {
         bottom: 0.8rem;
         font-size: 0.8rem;
     }
-
     .stats-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr;
     }
-
     .pricing-header h2 {
         font-size: 2rem;
     }
-
     .url-shortener-form {
         padding: 2rem;
     }
-
     .form-row {
-        flex-direction: column; /* Stack form inputs */
+        flex-direction: column;
         gap: 1rem;
     }
-
     .cta-banner h2 {
         font-size: 2rem;
     }
-
     .footer-content {
-        flex-direction: column; /* Stack footer columns */
+        flex-direction: column;
         gap: 2rem;
     }
-
     .footer-logo-social {
         margin-bottom: 2rem;
     }
-
     .footer-links-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust min width for footer columns */
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         text-align: left;
     }
-
     .footer-bottom {
         text-align: center;
     }
 }
-
 @media (max-width: 480px) {
     .navbar {
         padding: 0 1rem;
     }
-
     .hero-content h1 {
         font-size: 2rem;
     }
-
     .hero-buttons {
-        flex-direction: column; /* Stack buttons */
+        flex-direction: column;
         gap: 0.8rem;
     }
-
     .long-url, .short-url {
         font-size: 1rem;
     }
@@ -960,7 +773,6 @@ p {
     .hero-image p {
         font-size: 0.8rem;
     }
-
     .stats-header h2,
     .features-header h2,
     .pricing-header h2,
@@ -968,16 +780,13 @@ p {
     .cta-banner h2 {
         font-size: 1.8rem;
     }
-
     .price-card {
-        width: 100%; /* Full width cards on very small screens */
+        width: 100%;
         padding: 2rem 1.5rem;
     }
-
     .url-shortener-form {
         padding: 1.5rem;
     }
-
     .url-input,
     .domain-select,
     .alias-input,
@@ -985,7 +794,6 @@ p {
         padding: 0.8rem 1rem;
         font-size: 0.95rem;
     }
-
     .faq-item h3 {
         font-size: 1rem;
     }
